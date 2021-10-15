@@ -1,0 +1,47 @@
+{
+  "Quotes" : [ {
+    "QuoteId" : 1,
+    "MinPrice" : 42974,
+    "Direct" : true,
+    "OutboundLeg" : {
+      "CarrierIds" : [ 835 ],
+      "OriginId" : 96474,
+      "DestinationId" : 47116,
+      "DepartureDate" : "2021-10-17T00:00:00"
+    },
+    "QuoteDateTime" : "2021-10-15T16:42:00"
+  } ],
+  "Carriers" : [ {
+    "CarrierId" : 835,
+    "Name" : "Air Canada"
+  } ],
+  "Places" : [ {
+    "Name" : "New Delhi",
+    "Type" : "Station",
+    "PlaceId" : 47116,
+    "IataCode" : "DEL",
+    "SkyscannerCode" : "DEL",
+    "CityName" : "New Delhi",
+    "CityId" : "IDEL",
+    "CountryName" : "India"
+  }, {
+    "Name" : "Toronto Pearson International",
+    "Type" : "Station",
+    "PlaceId" : 96474,
+    "IataCode" : "YYZ",
+    "SkyscannerCode" : "YYZ",
+    "CityName" : "Toronto",
+    "CityId" : "YTOA",
+    "CountryName" : "Canada"
+  } ],
+  "Currencies" : [ {
+    "Code" : "INR",
+    "Symbol" : "₹",
+    "ThousandsSeparator" : ",",
+    "DecimalSeparator" : ".",
+    "SymbolOnLeft" : true,
+    "SpaceBetweenAmountAndSymbol" : false,
+    "RoundingCoefficient" : 0,
+    "DecimalDigits" : 2
+  } ]
+}

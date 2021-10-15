@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+          table {
+              margin: 0 auto;
+              font-size: large;
+              border: 1px solid black;
+          }
+    
+          h1 {
+              text-align: center;
+              color: #006600;
+              font-size: xx-large;
+              font-family: 'Gill Sans', 
+                  'Gill Sans MT', ' Calibri', 
+                  'Trebuchet MS', 'sans-serif';
+          }
+    
+          td {
+              background-color: #E4F5D4;
+              border: 1px solid black;
+          }
+    
+          th,
+          td {
+              font-weight: bold;
+              border: 1px solid black;
+              padding: 10px;
+              text-align: center;
+          }
+    
+          td {
+              font-weight: lighter;
+          }
+      </style>
+</head>
+<body>
+          <table id='table'>
+                
+                    <tr>
+                        <th>Destination</th>
+                        <th>Origin</th>
+                        <th>Airline name</th>
+                        <th>Minimum price available</th>
+                    </tr>
+</body>
+<script>
+    $(document).ready(function () { 
+        $.getJSON("./JsonFile.json",function(data){
+                var employee_data='';
+                var mydata=JSON.parse(Quotes);
+                $.each(dtaa,function(key,value){
+                    employee_data+='<tr>';
+                    employee_data+='<td>'+mydata[0].MinPrice+'<td>';
+                    employee_data+='<td>'+value.address+'</td>';
+                    employee_data+='<td>'+value.gender+'<td>';
+                    employee_data+='<td>'+value.desgination+'</td>';
+                    employee_data+='</tr>';
+                });
+                $('#table').append(employee_data);
+        });
+
+     });
+</script>
+</html>
